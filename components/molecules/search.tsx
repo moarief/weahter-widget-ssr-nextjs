@@ -10,7 +10,7 @@ import { Input } from "../ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { SearchProps } from "../../lib/types/search";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
   city: z.string({ description: "" }).min(2, {
@@ -20,7 +20,6 @@ const FormSchema = z.object({
 
 export function Search({ country }: SearchProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
