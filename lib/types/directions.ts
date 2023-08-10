@@ -1,0 +1,18 @@
+export const directions = [
+  "Nord",
+  "Nord-nordøst",
+  "Nordøst",
+  "Øst-nordøst",
+  "Øst",
+  "Øst-sydøst",
+  "Sydøst",
+  "Syd-sydøst",
+  "Syd",
+  "Syd-sydvest",
+  "Sydvest",
+  "Vest-sydvest",
+  "Vest",
+  "Vest-nordvest",
+  "Nordvest",
+  "Nord-nordvest",
+];
