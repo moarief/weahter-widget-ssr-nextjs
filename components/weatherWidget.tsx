@@ -36,7 +36,7 @@ export const WeatherWidget = () => {
     <div className="">
       {weatherData ? (
         <>
-          <Card>
+          <Card className="w-[350px]">
             <CardHeader>
               <CardTitle>Weather in {weatherData.name}</CardTitle>
             </CardHeader>
